@@ -38,26 +38,36 @@ struct ContentView: View {
                                    imageName: "cloud.sun.fill",
                                    temperature: 40)
                     
-                    WeatherDayView(dayOfWeek: "TUE",
+                    WeatherDayView(dayOfWeek: "WED",
                                    imageName: "cloud.sun.fill",
                                    temperature: 40)
                     
-                    WeatherDayView(dayOfWeek: "TUE",
+                    WeatherDayView(dayOfWeek: "THU",
                                    imageName: "cloud.sun.fill",
                                    temperature: 40)
                     
-                    WeatherDayView(dayOfWeek: "TUE",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 40)
+                    WeatherDayView(dayOfWeek: "FRI",
+                                   imageName: "sunset.fill",
+                                   temperature: 32)
                     
-                    WeatherDayView(dayOfWeek: "TUE",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 40)
+                    WeatherDayView(dayOfWeek: "SAT",
+                                   imageName: "snow",
+                                   temperature: 24)
                     
                     
                     
             }
                 Spacer()
+                
+                Button {
+                    print("tapped")
+                } label: {
+                    Text("Change Day Time")
+                        .frame(width: 280, height: 50)
+                        .background(Color.white)
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .cornerRadius(15)
+                }
             }
         }
     }
